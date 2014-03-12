@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Clean Hidden Facebook Buttons",
+  "description": "This extension removes invisible 'Like' buttons.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*.akznews.com/*"],
+      "css": ["css/no_invisible_like.css"],
+      "js": []
+    }
+  ]
+}
